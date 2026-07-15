@@ -2,6 +2,12 @@
 
 Dashboard interaktif berbasis web menggunakan **Streamlit** untuk menganalisis dan memvisualisasikan data penyewaan sepeda berdasarkan dataset Bike Sharing. Proyek ini merupakan bagian dari analisis data untuk mengeksplorasi pengaruh faktor musim, waktu, dan hari terhadap tren penyewaan sepeda.
 
+## Dashboard Preview
+
+<p align="center">
+    <img src="images/dashboard.png" width="1000">
+</p>
+
 ## 🚀 Fitur Utama
 
 - **Key Performance Indicators (KPIs):** Menampilkan metrik utama secara real-time seperti Total Penyewaan, Pengguna Terdaftar (*Registered*), dan Pengguna Biasa (*Casual*).
