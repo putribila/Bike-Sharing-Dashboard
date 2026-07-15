@@ -29,8 +29,8 @@ Analisis-bike-sharing/
 ├── Proyek_Analisis_Data_Bike_sharing.ipynb # Notebook Jupyter berisi analisis data & visualisasi awal
 ├── proyek_analisis_data_bike_sharing.py    # Skrip python hasil ekspor notebook
 ├── app.py                               # Kode utama aplikasi dashboard Streamlit
-├── README.md                            # Dokumentasi proyek
-└── requirements.txt                     # Ketergantungan pustaka Python (jika ada)
+├── README.md                           
+└── requirements.txt                   
 ```
 
 ---
