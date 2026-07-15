@@ -121,16 +121,7 @@ def load_data():
     day_df["date_day"] = pd.to_datetime(day_df["date_day"])
     hour_df["date_day"] = pd.to_datetime(hour_df["date_day"])
 
-    # Categorical conversions
-    categorical_columns_day = ["season", "year", "month", "day_of_week", "weather_sit"]
-    categorical_columns_hour = ["season", "year", "month", "hour", "day_of_week", "weather_sit"]
-
-    for col in categorical_columns_day:
-        day_df[col] = day_df[col].astype("category")
-    for col in categorical_columns_hour:
-        hour_df[col] = hour_df[col].astype("category")
-
-    # Replace values with descriptions
+    # Replace values with descriptions first
     column_season = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
     column_year = {0: 2011, 1: 2012}
     column_month = {
@@ -150,6 +141,15 @@ def load_data():
         df["month"] = df["month"].replace(column_month)
         df["day_of_week"] = df["day_of_week"].replace(column_day_of_week)
         df["weather_sit"] = df["weather_sit"].replace(column_weather_sit)
+
+    # Categorical conversions after replacements
+    categorical_columns_day = ["season", "year", "month", "day_of_week", "weather_sit"]
+    categorical_columns_hour = ["season", "year", "month", "hour", "day_of_week", "weather_sit"]
+
+    for col in categorical_columns_day:
+        day_df[col] = day_df[col].astype("category")
+    for col in categorical_columns_hour:
+        hour_df[col] = hour_df[col].astype("category")
 
     # Add category_day column matching the logic in notebook:
     # "if day_of_week <= 'Thu': return 'weekday' else: return 'weekend'"
