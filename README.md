@@ -8,6 +8,11 @@ Dashboard interaktif berbasis web menggunakan **Streamlit** untuk menganalisis d
     <img src="images/dashboard.png" width="1000">
 </p>
 
+## Live Deploy Dashboard 
+
+🔗 **View Interactive Dashboard:**  
+https://bike-sharing-dashboard-interaktif.streamlit.app/
+
 ## 🚀 Fitur Utama
 
 - **Key Performance Indicators (KPIs):** Menampilkan metrik utama secara real-time seperti Total Penyewaan, Pengguna Terdaftar (*Registered*), dan Pengguna Biasa (*Casual*).
