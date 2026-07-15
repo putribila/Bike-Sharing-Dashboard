@@ -169,7 +169,7 @@ def load_data():
 day_df, hour_df = load_data()
 
 # ----------------- SIDEBAR FILTER -----------------
-st.sidebar.image("https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=300&q=80", use_container_width=True)
+st.sidebar.image("https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=300&q=80", width="stretch")
 st.sidebar.title("Dashboard Filter 🚲")
 
 # Season selection
@@ -299,7 +299,7 @@ else:
                 fig.update_traces(
                     hovertemplate="<b>%{x}</b><br>Total Rental: %{y:,}<extra></extra>"
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
             else:
                 st.info("Musim Spring atau Fall tidak terpilih dalam filter.")
 
@@ -336,7 +336,7 @@ else:
             fig.update_traces(
                 hovertemplate="<b>%{x}</b><br>Total Rental: %{y:,}<extra></extra>"
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
     # Tab 2: Time analysis
     with tab2:
@@ -365,7 +365,7 @@ else:
                     margin=dict(l=40, r=40, t=50, b=40),
                     height=380
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
             else:
                 st.info("Tidak ada data jam tersedia.")
         else:
@@ -396,7 +396,7 @@ else:
                 margin=dict(l=40, r=40, t=50, b=40),
                 height=380
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
         else:
             st.info("Tidak ada data kategori hari.")
 
